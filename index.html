@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Autoplay</title>
+</head>
+<body>
+    <a href="#" onclick="showAndPlayVideo()">Guarda il video</a>
+
+    <video id="myVideo" width="640" height="360" style="display: none;" autoplay>
+        <source src="ha.mp4" type="video/mp4">
+        Il tuo browser non supporta il video HTML5.
+    </video>
+
+    <script>
+        function showAndPlayVideo() {
+            const video = document.getElementById('myVideo');
+            video.style.display = 'block';
+            video.play();
+        }
+    </script>
+</body>
+</html>
